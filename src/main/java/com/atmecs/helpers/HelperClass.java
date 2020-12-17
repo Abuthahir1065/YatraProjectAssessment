@@ -1,5 +1,7 @@
 package com.atmecs.helpers;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -18,14 +20,18 @@ public class HelperClass extends SetUpClass {
 	public static void PerformClick(WebDriver driver, String xpath) {
 		driver.findElement(By.xpath(xpath)).click();
 	}
+	public static void waitAndSelect(WebDriver driver,String xpath) throws InterruptedException
+	{
+		Thread.sleep(4000);
+		driver.findElement(By.xpath(xpath)).click();
+		
+	}
 
-	public static void waitAndEntertext(WebDriver driver, String xpath, String text) {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
-		WebElement waitElement = wait
-				.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(xpath))));
-		waitElement.click();
-		waitElement.sendKeys(text);
-		waitElement.sendKeys(Keys.ENTER);
+	public static void closeAd(WebDriver driver,String iFrameXpath,String closeXpath)
+	{
+		driver.switchTo().frame(driver.findElement(By.xpath(iFrameXpath)));
+		driver.findElement(By.xpath(closeXpath)).click();
+		driver.switchTo().parentFrame();
 	}
 
 	public static boolean checkIfDisplayed(WebDriver driver, String xpath) {

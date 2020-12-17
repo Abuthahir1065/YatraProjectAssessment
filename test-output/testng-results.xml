@@ -1,22 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Top Monuments Section  has been Displayed]]>
+      <![CDATA[Opening Home Page]]>
     </line>
     <line>
-      <![CDATA[Qutub Minar has been Displayed]]>
+      <![CDATA[Opening Home Page]]>
     </line>
     <line>
-      <![CDATA[Humayuns Tomb has been Displayed]]>
+      <![CDATA[Selecting Destination/River ]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-12-14T18:05:09 IST" name="Suite" finished-at="2020-12-14T18:05:21 IST" duration-ms="12073">
+  <suite started-at="2020-12-17T14:39:47 IST" name="Suite" finished-at="2020-12-17T14:40:29 IST" duration-ms="42194">
     <groups>
     </groups>
-    <test started-at="2020-12-14T18:05:09 IST" name="Chrome Test" finished-at="2020-12-14T18:05:21 IST" duration-ms="12073">
-      <class name="com.atmecs.testscripts.MonumentClass">
-        <test-method is-config="true" signature="browserSetUp(java.lang.String)[pri:0, instance:com.atmecs.testscripts.MonumentClass@5e316c74]" started-at="2020-12-14T18:05:09 IST" name="browserSetUp" finished-at="2020-12-14T18:05:18 IST" duration-ms="9477" status="PASS">
+    <test started-at="2020-12-17T14:39:47 IST" name="FireFox Test" finished-at="2020-12-17T14:40:10 IST" duration-ms="23666">
+      <class name="com.atmecs.testscripts.SearchCruiseClass">
+        <test-method is-config="true" signature="browserSetUp(java.lang.String)[pri:0, instance:com.atmecs.testscripts.SearchCruiseClass@36c88a32]" started-at="2020-12-17T14:39:47 IST" name="browserSetUp" finished-at="2020-12-17T14:40:02 IST" duration-ms="14949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method signature="searchCruise()[pri:0, instance:com.atmecs.testscripts.SearchCruiseClass@36c88a32]" started-at="2020-12-17T14:40:02 IST" name="searchCruise" finished-at="2020-12-17T14:40:05 IST" duration-ms="2897" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <span class="more-arr"> is not clickable at point (730,36) because another element <iframe id="webklipper-publisher-widget-container-notification-frame" name="notification-frame-~55870753"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSBLRLT-030', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 9372, moz:profile: C:\Users\abuthahir.musthafa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b995297-482c-4bdc-b584-08790e7778b6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="more-arr"> is not clickable at point (730,36) because another element <iframe id="webklipper-publisher-widget-container-notification-frame" name="notification-frame-~55870753"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSBLRLT-030', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 9372, moz:profile: C:\Users\abuthahir.musthafa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b995297-482c-4bdc-b584-08790e7778b6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.atmecs.helpers.HelperClass.PerformClick(HelperClass.java:21)
+at com.atmecs.testscripts.SearchCruiseClass.searchCruise(SearchCruiseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Opening Home Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchCruise -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.atmecs.testscripts.SearchCruiseClass@36c88a32]" started-at="2020-12-17T14:40:05 IST" name="closeBrowser" finished-at="2020-12-17T14:40:10 IST" duration-ms="5773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.atmecs.testscripts.SearchCruiseClass -->
+    </test> <!-- FireFox Test -->
+    <test started-at="2020-12-17T14:39:47 IST" name="Chrome Test" finished-at="2020-12-17T14:40:29 IST" duration-ms="42194">
+      <class name="com.atmecs.testscripts.SearchCruiseClass">
+        <test-method is-config="true" signature="browserSetUp(java.lang.String)[pri:0, instance:com.atmecs.testscripts.SearchCruiseClass@5e316c74]" started-at="2020-12-17T14:39:47 IST" name="browserSetUp" finished-at="2020-12-17T14:40:00 IST" duration-ms="12779" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,24 +110,84 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetUp -->
-        <test-method signature="displayMonuments()[pri:0, instance:com.atmecs.testscripts.MonumentClass@5e316c74]" started-at="2020-12-14T18:05:18 IST" name="displayMonuments" finished-at="2020-12-14T18:05:20 IST" duration-ms="1776" status="PASS">
+        <test-method signature="searchCruise()[pri:0, instance:com.atmecs.testscripts.SearchCruiseClass@5e316c74]" started-at="2020-12-17T14:40:00 IST" name="searchCruise" finished-at="2020-12-17T14:40:28 IST" duration-ms="28668" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSBLRLT-030', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ABUTHA~1.MUS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6acd5d230ca01c6ce5d990f61dda4293
+*** Element info: {Using=xpath, value=//span[text()='Africa']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSBLRLT-030', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ABUTHA~1.MUS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6acd5d230ca01c6ce5d990f61dda4293
+*** Element info: {Using=xpath, value=//span[text()='Africa']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.atmecs.helpers.HelperClass.waitAndSelect(HelperClass.java:26)
+at com.atmecs.testscripts.SearchCruiseClass.searchCruise(SearchCruiseClass.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
             <line>
-              <![CDATA[Top Monuments Section  has been Displayed]]>
+              <![CDATA[Opening Home Page]]>
             </line>
             <line>
-              <![CDATA[Qutub Minar has been Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Humayuns Tomb has been Displayed]]>
+              <![CDATA[Selecting Destination/River ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- displayMonuments -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.atmecs.testscripts.MonumentClass@5e316c74]" started-at="2020-12-14T18:05:20 IST" name="closeBrowser" finished-at="2020-12-14T18:05:21 IST" duration-ms="783" status="PASS">
+        </test-method> <!-- searchCruise -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.atmecs.testscripts.SearchCruiseClass@5e316c74]" started-at="2020-12-17T14:40:28 IST" name="closeBrowser" finished-at="2020-12-17T14:40:29 IST" duration-ms="710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.atmecs.testscripts.MonumentClass -->
+      </class> <!-- com.atmecs.testscripts.SearchCruiseClass -->
     </test> <!-- Chrome Test -->
   </suite> <!-- Suite -->
 </testng-results>

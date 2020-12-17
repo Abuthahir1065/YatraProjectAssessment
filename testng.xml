@@ -3,23 +3,22 @@
 <suite name="Suite" thread-count="2" parallel="tests">
 
 
+	
 	<test name="Chrome Test">
 		<parameter name="browser" value="chrome">
 			<classes>
-				<class name="com.atmecs.testscripts.MonumentClass" />
-				<class name="com.atmecs.testscripts.SearchCruiseClass" />
-
+				<class name="com.atmecs.testscripts.SearchCruiseClass"/>
 			</classes>
 		</parameter>
 	</test> <!-- Test -->
-	<test name="Firefox Test">
+	  <test name="FireFox Test">
 		<parameter name="browser" value="firefox">
 			<classes>
-				<class name="com.atmecs.testscripts.MonumentClass" />
-				<class name="com.atmecs.testscripts.SearchCruiseClass" />
+								<class name="com.atmecs.testscripts.SearchCruiseClass"/>
+					
 			</classes>
 		</parameter>
-	</test> <!-- Test -->
+	</test> 
 </suite> <!-- Suite -->
 
 
